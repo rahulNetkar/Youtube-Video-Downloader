@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './downloader_class.dart';
 
 class PasteLink extends StatefulWidget {
   @override
@@ -8,6 +9,22 @@ class PasteLink extends StatefulWidget {
 class _PasteLinkState extends State<PasteLink> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+        child: Column(
+          children: [
+            TextFormField(),
+            ListTile(),
+            ListTile(),
+            ListTile(),
+            ListTile(),
+            ElevatedButton(
+              onPressed: null,
+              child: Container(),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

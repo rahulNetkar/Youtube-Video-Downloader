@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_youtube_downloader/flutter_youtube_downloader.dart';
+import './downloader_class.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class Browse extends StatefulWidget {
   @override
