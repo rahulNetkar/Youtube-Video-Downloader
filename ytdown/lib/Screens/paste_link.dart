@@ -104,8 +104,8 @@ class _PasteLinkState extends State<PasteLink> {
                   ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text("No link pasted")));
                 } else {
-                  Download().downloadVideo(
-                      _textController.text, _textController.text, _itag);
+                  Download().downloadVideo(_textController.text,
+                      _textController.text.substring(17), _itag);
                 }
               },
               style: ButtonStyle(
