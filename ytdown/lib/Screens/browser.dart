@@ -83,7 +83,32 @@ class _BrowseState extends State<Browse> {
               ),
             ),
             ListTile(
-              title: const Text('Video only (for live wallpapers)[303]'),
+              title: const Text('480p'),
+              leading: Radio<int>(
+                value: 59,
+                groupValue: _itag,
+                onChanged: (int? value) {
+                  setState(() {
+                    _itag = value!;
+                  });
+                },
+              ),
+            ),
+            ListTile(
+              title:
+                  const Text('1080p Video only (for live wallpapers) [248] '),
+              leading: Radio<int>(
+                value: 248,
+                groupValue: _itag,
+                onChanged: (int? value) {
+                  setState(() {
+                    _itag = value!;
+                  });
+                },
+              ),
+            ),
+            ListTile(
+              title: const Text('1080p Video only (for live wallpapers)[303]'),
               leading: Radio<int>(
                 groupValue: _itag,
                 value: 303,
@@ -95,7 +120,7 @@ class _BrowseState extends State<Browse> {
               ),
             ),
             ListTile(
-              title: const Text('Video only (for live wallpapers)[399]'),
+              title: const Text('1080p Video only (for live wallpapers)[399]'),
               leading: Radio<int>(
                 groupValue: _itag,
                 value: 399,
