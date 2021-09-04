@@ -105,7 +105,7 @@ class _PasteLinkState extends State<PasteLink> {
                       const SnackBar(content: Text("No link pasted")));
                 } else {
                   Download().downloadVideo(
-                      _textController.text, "Downloaded video", _itag);
+                      _textController.text, _textController.text, _itag);
                 }
               },
               style: ButtonStyle(
